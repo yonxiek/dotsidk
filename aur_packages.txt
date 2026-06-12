@@ -1,0 +1,14 @@
+bibata-cursor-theme
+distro-grub-themes-arch
+equicord
+google-chrome
+hyphen-ru
+kumir2-git
+openasar-git
+sddm-sugar-candy-git
+spicetify-cli
+spotify
+tg-ws-proxy-bin
+ttf-ms-fonts
+yay-debug
+zoom

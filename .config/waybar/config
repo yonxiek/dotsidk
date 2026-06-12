@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "modules-left": ["cpu", "memory", "temperature"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "tray", "clock"],
+
+"hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "hyprctl dispatch workspace {id}",
+    "all-outputs": true,
+    "disable-scroll": true
+},
+
+    },
+    "cpu": { "format": " {usage}%" },
+    "memory": { "format": " {used}GB" },
+    "temperature": { "format": " {temperatureC}°C" },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": { "default": ["", "", ""] }
+    },
+    "tray": {
+        "spacing": 10,
+        "icon-size": 16
+    },
+    "clock": { "format": "{:%H:%M}" }
+}
