@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
 # Path to your Oh My Zsh installation.
-fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -69,10 +70,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zoxide extract)
-
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zoxide extract alias-magic)
 source $ZSH/oh-my-zsh.sh
-PROMPT="%n@%m $PROMPT"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,4 +108,3 @@ alias venv="source venv/bin/activate"
 
 eval "$(zoxide init zsh)"
 
-export PATH=$PATH:/home/yonxiekbyarch/.spicetify
