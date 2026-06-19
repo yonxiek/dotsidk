@@ -1,0 +1,70 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+    font-size: 13px;
+    color: #ffffff;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Общий стиль для всех блоков */
+#cpu, #memory, #temperature, #network, #pulseaudio, #clock, #tray, #workspaces {
+    padding: 0 10px;
+    margin: 4px 2px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
+/* Воркспейсы: делаем кнопки максимально компактными */
+#workspaces {
+    background: transparent; /* Убираем общий фон, если хотим раздельные кнопки */
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 4px 2px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #aaaaaa;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Центрирование часов */
+#clock {
+    background: transparent;
+    font-weight: bold;
+}
+
+/* Настройки для текста */
+#cpu, #memory, #temperature {
+    font-weight: normal;
+}
+
+#network {
+    color: #a6e3a1; /* Нежно-зеленый для Wi-Fi */
+}
+
+#pulseaudio {
+    color: #89b4fa; /* Голубой для звука */
+}
+
+#pulseaudio.microphone {
+    color: #fab387; /* Оранжевый для микрофона */
+}
+
+#tray {
+    margin-right: 5px;
+}
