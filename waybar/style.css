@@ -68,3 +68,32 @@ window#waybar {
 #tray {
     margin-right: 5px;
 }
+/* Основное окно меню (при клике ПКМ) */
+menu {
+    background: #000000;          /* Чисто черный фон */
+    border: 1px solid #ffffff;    /* Белая рамка, чтобы меню не сливалось с фоном */
+    border-radius: 8px;
+    padding: 5px;
+    color: #ffffff;               /* Белый текст */
+}
+
+/* Пункты меню */
+menuitem {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+/* Наведение на пункт меню (Инверсия: белый фон, черный текст) */
+menuitem:hover {
+    background: #ffffff;          /* Белый фон при наведении */
+    color: #000000;               /* Черный текст при наведении */
+}
+
+/* Нужно также прописать цвет для текста внутри, 
+   так как GTK иногда прячет его в ярлыки (labels) */
+menuitem label {
+    color: inherit;               /* Текст наследует цвет от menuitem */
+    padding: 0 5px;
+}
