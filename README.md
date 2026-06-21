@@ -81,4 +81,4 @@ yay -S --needed < aur_packages.txt
 ```
 <p align="center">Made with 🖤 by yonxiek</p>
 
-![🖤](.config/hypr/wp/vid1.mp4)
+![🖤](/materials/ss3.png)
